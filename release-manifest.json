@@ -1,0 +1,293 @@
+{
+  "title": "Hina — scoped public viewer release",
+  "preparedAt": "2026-10-17T05:36:56.571Z",
+  "intendedRepository": "ecooxai/hina-gpt6-astra-pro-chatgpt-threejs",
+  "intendedSite": "https://ecooxai.github.io/hina-gpt6-astra-pro-chatgpt-threejs/",
+  "scope": [
+    "Original procedural viewer and model source",
+    "Generated standard and credited GLB models",
+    "Rendered creator-credited model previews",
+    "Vendored Three.js software with its license",
+    "Selected numeric review reports and scored candidate CSVs"
+  ],
+  "exclusions": [
+    "Supplied reference image and its URL",
+    "Manual input-image annotations and original fitting script",
+    "Internal QA captures and raw process/environment reports",
+    "Node dependencies and credentials"
+  ],
+  "totalFiles": 45,
+  "totalBytes": 29607236,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 34,
+      "sha256": "64c26fa66c9739e933c0e9ae383b709d52b75a65bda95a2b63f65a13a1d48eac",
+      "origin": "Release repository ignores local runtime files"
+    },
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "Static hosting marker"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 16072,
+      "sha256": "7d593b12cfd09cde0504375f12db5d1e9a0e4a38b19eba5c53b0bbe2c6ddde1d",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "exports/fit-audit.json",
+      "bytes": 3095,
+      "sha256": "7285e99102beade6da89131b837109e6fa0ae06073dbc1b8f1b4dfa05789b738",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "exports/fit-history/run-001/iteration-log.csv",
+      "bytes": 2533365,
+      "sha256": "aebf6c126de0a6ee881b1467b7a2469a9b22ee35935f420a0513520f9d067a54",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "exports/Hina_GPT6_Astra_Pro_ChatGPT_ThreeJS_showcase.glb",
+      "bytes": 8970528,
+      "sha256": "be864bb5a6d3e0a40b54b3cb9cd0511630f8ba8faaae345e193bc2fba334d92d",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "exports/Hina_GPT6_Astra_Pro_ChatGPT_ThreeJS.glb",
+      "bytes": 8925984,
+      "sha256": "6a0db873c2f7a56d4378f026db43c530a2731f6b4bf1b8c56f8ac9427721aa1e",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "exports/iteration-log.csv",
+      "bytes": 2524517,
+      "sha256": "88473886ccd60e965221f76573d7932388442f400286d853003c24f0b542f443",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "exports/iteration-summary.json",
+      "bytes": 5982,
+      "sha256": "60ae31de4b32c71ae1e2c381a21d772febbc03dc692856bcdffa1d7aa44ff2ea",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "exports/model-manifest.json",
+      "bytes": 7765,
+      "sha256": "5a919cc25fab9d396e50c1a9d2a48614a84c3c322cdae3486aea0d48d38d3622",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "exports/performance.json",
+      "bytes": 4649,
+      "sha256": "7863df4a9a09a0336c989fec6ca79842dc78a13bc2487a3ab40e580e80b9c9a9",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "exports/validation.json",
+      "bytes": 2133,
+      "sha256": "e3a2ca429d65df3252e406d37e5d544c66192d06bec67c0f41b62bbaba816feb",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "exports/visual-review.json",
+      "bytes": 4369,
+      "sha256": "874998df156d010eadf8855c54b3962e615fe281fd8eea63f23205195e136ca5",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "index.html",
+      "bytes": 5181,
+      "sha256": "e784050627c5aada7c1c3fe21e4091b6f1bf390c31bd1c7840c49e9e1d5fe8ed",
+      "origin": "Viewer markup with the development-only reference control omitted"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 2025,
+      "sha256": "728a994ec4e857fe9b46dcfd6aa8e9810b0ea55afec957e07cfe1c8bb198d304",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "package.json",
+      "bytes": 477,
+      "sha256": "a47b86ff5b52dd7f591fb636a321592ff20ec4f5af6add8575fa5a936df20bb4",
+      "origin": "Portable viewer and export commands"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11744,
+      "sha256": "878b7332440e3ef5246b01826035b6469e12503801807fb75ac9f470b60a6561",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "scripts/benchmark-native-orbit.mjs",
+      "bytes": 10940,
+      "sha256": "ea4b837de8dc92bae05c6ba4b0236ac41d3d0e485f84db0c3d7b8ce10501cf5a",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "scripts/browser.mjs",
+      "bytes": 4370,
+      "sha256": "cafc66130526392274f2e0dee4130664ec7cbdd470a5e9959a2d635e20bdc32e",
+      "origin": "Portable browser launcher without a machine-specific executable path"
+    },
+    {
+      "path": "scripts/capture.mjs",
+      "bytes": 4046,
+      "sha256": "e705e460995959fc740b36b0f7190753a46476ef44697901028193e76470ee2f",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "scripts/export-release.mjs",
+      "bytes": 20247,
+      "sha256": "319b7548e158c0bd4c0f6a4e72dfdce4399751b9431f673915dda5397ba6ba8f",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "scripts/serve.mjs",
+      "bytes": 1197,
+      "sha256": "cf8b8faf345b18cfb7f935e9adbc242890c7481eae1d65b9d41b606fad0d20aa",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "scripts/verify.mjs",
+      "bytes": 9370,
+      "sha256": "3289ff7ac5057710f50b5547388c1153ff8d7862661f6ac4bf6c2d086ba3c0d2",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "showcase/Hina_GPT6_Astra_Pro_ChatGPT_ThreeJS_back.png",
+      "bytes": 367381,
+      "sha256": "dacc02078930e50acef723437c81145e1bd4ce75c395cd04e2c52603d7101da9",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "showcase/Hina_GPT6_Astra_Pro_ChatGPT_ThreeJS_four_views_character.png",
+      "bytes": 623472,
+      "sha256": "8a104a811ef836a6eaaf6d613dfc9b7453afc245e5374d9bf6dc70b981266e67",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "showcase/Hina_GPT6_Astra_Pro_ChatGPT_ThreeJS_four_views.png",
+      "bytes": 720209,
+      "sha256": "188f4b2ec995319b7253ee58cd668fea069d5e93a70262d58ea996889e51de89",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "showcase/Hina_GPT6_Astra_Pro_ChatGPT_ThreeJS_front.png",
+      "bytes": 412912,
+      "sha256": "90f8ced7e59f1918d482b66249b0aec1bf5b41dc513e25b80b8005b6fb0e2527",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "showcase/Hina_GPT6_Astra_Pro_ChatGPT_ThreeJS_left.png",
+      "bytes": 371903,
+      "sha256": "df8ed0e09817b270205edb51df7f3b1eb4d845cd5dcb18f72becd2bc030fe1ca",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "showcase/Hina_GPT6_Astra_Pro_ChatGPT_ThreeJS_portrait.png",
+      "bytes": 593920,
+      "sha256": "adc8911c8ed03665d6983f2a7701ca71175bb052637da136477f747b9bf90c16",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "showcase/Hina_GPT6_Astra_Pro_ChatGPT_ThreeJS_right.png",
+      "bytes": 394823,
+      "sha256": "1a0180d1756032b5b397b2d50a2b9c628216d25e00f04ae8dcb41daf569507c6",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "showcase/Hina_GPT6_Astra_Pro_ChatGPT_ThreeJS_showcase_model.png",
+      "bytes": 652604,
+      "sha256": "71817959e1c55eed4e48bdc4c8f307798a7c065e2fa6937020eef93e76e2c225",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "src/body.js",
+      "bytes": 34417,
+      "sha256": "140d1e20e60a29e1e4529a91fcce23ab771eccc4c041c899c564338e5fa89d27",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "src/export-compat.js",
+      "bytes": 3460,
+      "sha256": "7984fb51f581bdb8f872729c00a4695b893e35c6af33b4324dd85c3d6d9c6b00",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "src/head.js",
+      "bytes": 27638,
+      "sha256": "f84abcf748bea7089dd1706985a55d9288347ee6b87c8fe8c07436b73c62ec1c",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "src/main.js",
+      "bytes": 15866,
+      "sha256": "3aae625fb9eedbec5b3305f4002f030e8b2a7dad9af59fd65aadb29af3dc289d",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "src/optimize.js",
+      "bytes": 12144,
+      "sha256": "be05115e37459d40fba7dce6fee1d0fe1b093be956e22035648dd2818399fbaf",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "src/umbrella.js",
+      "bytes": 13174,
+      "sha256": "84f9fe5feb4844d1425122b933adb2edafff2368c89afe292b4054bbdcf5fa1f",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "style.css",
+      "bytes": 12201,
+      "sha256": "ba21d82c628e655c7834eedc4534077d966ec588312f5b5db5f8a0040ae27a34",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "vendor/addons/controls/OrbitControls.js",
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "vendor/addons/exporters/GLTFExporter.js",
+      "bytes": 86392,
+      "sha256": "e7c29444454eb321b39e4c8b3062944f4fd5299a0e7483e9cb8c0594cdec829f",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "vendor/addons/loaders/GLTFLoader.js",
+      "bytes": 114739,
+      "sha256": "67ac5551fdafa6e349bd80c8f8e5e39c136d6b2fb1ad647db9abb21dc86f9e4a",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "vendor/addons/utils/BufferGeometryUtils.js",
+      "bytes": 35539,
+      "sha256": "fda7e946b8e0b5ab39b779206589e7a1079a22eb24efb89d7223e03fdfb1f751",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "vendor/THREE_LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "vendor/three.core.js",
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "origin": "Original project output or declared software dependency"
+    },
+    {
+      "path": "vendor/three.module.js",
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "origin": "Original project output or declared software dependency"
+    }
+  ]
+}

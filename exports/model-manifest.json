@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-17T05:34:08.271Z",
+  "title": "Hina — original procedural 3D character",
+  "creator": {
+    "model": "GPT-6 Astra Pro",
+    "agent": "ChatGPT",
+    "renderer": "Three.js"
+  },
+  "sourceHashes": {
+    "src/body.js": "140d1e20e60a29e1e4529a91fcce23ab771eccc4c041c899c564338e5fa89d27",
+    "src/head.js": "f84abcf748bea7089dd1706985a55d9288347ee6b87c8fe8c07436b73c62ec1c",
+    "src/umbrella.js": "84f9fe5feb4844d1425122b933adb2edafff2368c89afe292b4054bbdcf5fa1f",
+    "src/main.js": "3aae625fb9eedbec5b3305f4002f030e8b2a7dad9af59fd65aadb29af3dc289d",
+    "src/optimize.js": "be05115e37459d40fba7dce6fee1d0fe1b093be956e22035648dd2818399fbaf",
+    "src/export-compat.js": "7984fb51f581bdb8f872729c00a4695b893e35c6af33b4324dd85c3d6d9c6b00"
+  },
+  "expectedPrimaryTriangles": 343720,
+  "expectedPrimaryBounds": {
+    "min": [
+      -0.4102482795715332,
+      0.003000000026077032,
+      -0.4858396649360657
+    ],
+    "max": [
+      0.28364279866218567,
+      1.8280856609344482,
+      0.21993406116962433
+    ]
+  },
+  "exportMethod": "HinaStudio.exportGLB, native browser Blob download, GLTFLoader reload from downloaded file",
+  "units": "meters",
+  "files": [
+    {
+      "file": "Hina_GPT6_Astra_Pro_ChatGPT_ThreeJS.glb",
+      "bytes": 8925984,
+      "sha256": "6a0db873c2f7a56d4378f026db43c530a2731f6b4bf1b8c56f8ac9427721aa1e",
+      "meshes": 49,
+      "materials": 44,
+      "textures": 1,
+      "images": 1,
+      "triangles": 343720,
+      "bounds": {
+        "min": [
+          -0.4102482795715332,
+          0.003000000026077032,
+          -0.4858396649360657
+        ],
+        "max": [
+          0.28364279866218567,
+          1.8280856609344482,
+          0.21993406116962433
+        ]
+      },
+      "textureDetails": [
+        {
+          "index": 0,
+          "imageIndex": 0,
+          "mimeType": "image/png",
+          "embedded": true,
+          "bytes": 86544,
+          "sha256": "858026e1906f19c7ce709fea47981db39666963b81b1d77c4ed82f611eb3e0f3"
+        }
+      ],
+      "reload": {
+        "meshes": 49,
+        "triangles": 343720,
+        "vertices": 192546,
+        "invalidVertices": 0,
+        "bounds": {
+          "min": [
+            -0.4102482795715332,
+            0.003000000026077032,
+            -0.4858396649360657
+          ],
+          "max": [
+            0.28364279866218567,
+            1.8280856609344482,
+            0.21993406116962433
+          ]
+        },
+        "original": {
+          "meshes": 49,
+          "triangles": 343720,
+          "vertices": 192546,
+          "invalidVertices": 0,
+          "bounds": {
+            "min": [
+              -0.4102482795715332,
+              0.003000000026077032,
+              -0.4858396649360657
+            ],
+            "max": [
+              0.28364279866218567,
+              1.8280856609344482,
+              0.21993406116962433
+            ]
+          }
+        },
+        "backFaceCompatibility": [
+          {
+            "name": "Hina / jaw silhouette ink flow",
+            "materialIsFrontSide": true,
+            "triangleWindingReversed": true,
+            "maxNormalDelta": 3.324878561361544e-8,
+            "degenerateSourceNormals": 0,
+            "degenerateNormalsAreUnit": true,
+            "liveSourceUnchanged": true
+          },
+          {
+            "name": "Hina · handcrafted eight-panel umbrella / batch 2 / MeshStandardMaterial",
+            "materialIsFrontSide": true,
+            "triangleWindingReversed": true,
+            "maxNormalDelta": 2.9640587206891666e-8,
+            "degenerateSourceNormals": 8,
+            "degenerateNormalsAreUnit": true,
+            "liveSourceUnchanged": true
+          }
+        ]
+      }
+    },
+    {
+      "file": "Hina_GPT6_Astra_Pro_ChatGPT_ThreeJS_showcase.glb",
+      "bytes": 8970528,
+      "sha256": "be864bb5a6d3e0a40b54b3cb9cd0511630f8ba8faaae345e193bc2fba334d92d",
+      "meshes": 51,
+      "materials": 46,
+      "textures": 2,
+      "images": 2,
+      "triangles": 343734,
+      "bounds": {
+        "min": [
+          -0.550000011920929,
+          -0.1929999988079071,
+          -0.4858396649360657
+        ],
+        "max": [
+          0.550000011920929,
+          1.8280856609344482,
+          0.311
+        ]
+      },
+      "textureDetails": [
+        {
+          "index": 0,
+          "imageIndex": 0,
+          "mimeType": "image/png",
+          "embedded": true,
+          "bytes": 86544,
+          "sha256": "858026e1906f19c7ce709fea47981db39666963b81b1d77c4ed82f611eb3e0f3"
+        },
+        {
+          "index": 1,
+          "imageIndex": 1,
+          "mimeType": "image/png",
+          "embedded": true,
+          "bytes": 41108,
+          "sha256": "e6619eea434edd0c7f3222da498a0697e3df636f70bbcbe9cd6ab32e289f2347"
+        }
+      ],
+      "creditTexture": {
+        "index": 1,
+        "imageIndex": 1,
+        "mimeType": "image/png",
+        "embedded": true,
+        "bytes": 41108,
+        "sha256": "e6619eea434edd0c7f3222da498a0697e3df636f70bbcbe9cd6ab32e289f2347",
+        "width": 2048,
+        "height": 320,
+        "unlit": true,
+        "text": [
+          "GPT-6 ASTRA PRO",
+          "CHATGPT · THREE.JS"
+        ]
+      },
+      "reload": {
+        "meshes": 51,
+        "triangles": 343734,
+        "vertices": 192574,
+        "invalidVertices": 0,
+        "bounds": {
+          "min": [
+            -0.550000011920929,
+            -0.1929999988079071,
+            -0.4858396649360657
+          ],
+          "max": [
+            0.550000011920929,
+            1.8280856609344482,
+            0.311
+          ]
+        },
+        "original": {
+          "meshes": 49,
+          "triangles": 343720,
+          "vertices": 192546,
+          "invalidVertices": 0,
+          "bounds": {
+            "min": [
+              -0.4102482795715332,
+              0.003000000026077032,
+              -0.4858396649360657
+            ],
+            "max": [
+              0.28364279866218567,
+              1.8280856609344482,
+              0.21993406116962433
+            ]
+          }
+        },
+        "backFaceCompatibility": [
+          {
+            "name": "Hina / jaw silhouette ink flow",
+            "materialIsFrontSide": true,
+            "triangleWindingReversed": true,
+            "maxNormalDelta": 3.324878561361544e-8,
+            "degenerateSourceNormals": 0,
+            "degenerateNormalsAreUnit": true,
+            "liveSourceUnchanged": true
+          },
+          {
+            "name": "Hina · handcrafted eight-panel umbrella / batch 2 / MeshStandardMaterial",
+            "materialIsFrontSide": true,
+            "triangleWindingReversed": true,
+            "maxNormalDelta": 2.9640587206891666e-8,
+            "degenerateSourceNormals": 8,
+            "degenerateNormalsAreUnit": true,
+            "liveSourceUnchanged": true
+          }
+        ],
+        "additions": [
+          {
+            "name": "Showcase__black_creator_plinth",
+            "triangles": 12
+          },
+          {
+            "name": "Showcase__white_creator_credit_on_black",
+            "triangles": 2
+          }
+        ],
+        "creditTexture": {
+          "width": 2048,
+          "height": 320,
+          "unlit": true
+        },
+        "plinthExists": true
+      }
+    }
+  ],
+  "validation": {
+    "result": "passed",
+    "checks": 36,
+    "errors": 0,
+    "exactPrimaryBounds": true,
+    "originalGeometryRetained": true,
+    "embeddedImagesOnly": true,
+    "liveModelUnchanged": true,
+    "backFacingOutlinesPreserved": true,
+    "nativeHardwareRenderer": true,
+    "glError": 0,
+    "contextLost": false,
+    "showcaseCapture": {
+      "source": "Hina_GPT6_Astra_Pro_ChatGPT_ThreeJS_showcase.glb",
+      "dimensions": [
+        1200,
+        1600
+      ],
+      "originalCharacterHidden": true
+    }
+  }
+}

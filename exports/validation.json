@@ -1,0 +1,75 @@
+{
+  "release": "Hina scoped public viewer",
+  "checks": [
+    "Camera button left",
+    "Camera button back",
+    "Camera button right",
+    "Camera button front",
+    "Four-side view enabled",
+    "Showcase snapshot is a PNG with a credit band",
+    "Turntable changes the camera",
+    "Umbrella can be hidden independently",
+    "Portrait framing",
+    "Reset restores full front view",
+    "Public release excludes the supplied reference image",
+    "Model vertices are finite",
+    "GLB binary header and length",
+    "GLB embeds geometry and the shared procedural iris texture",
+    "Export reload preserves all triangles",
+    "Export reload preserves model bounds",
+    "Renderer has no WebGL error or lost context",
+    "Phone touch controls select a camera",
+    "Phone layout has no horizontal overflow",
+    "Phone canvas has a usable visible size",
+    "Phone touch drag orbits the 3D character",
+    "Camera preset clears residual touch-drag motion",
+    "No browser or missing-resource errors"
+  ],
+  "passedChecks": 23,
+  "errors": [],
+  "geometry": {
+    "meshes": 49,
+    "vertices": 192546,
+    "triangles": 343720,
+    "invalidVertices": 0,
+    "bounds": {
+      "min": [
+        -0.4102482795715332,
+        0.003000000026077032,
+        -0.4858396649360657
+      ],
+      "max": [
+        0.28364279866218567,
+        1.8280856609344482,
+        0.21993406116962433
+      ]
+    }
+  },
+  "export": {
+    "bytes": 8925984,
+    "meshes": 49,
+    "materials": 44,
+    "images": 1,
+    "roundtrip": {
+      "meshes": 49,
+      "triangles": 343720,
+      "bounds": {
+        "min": [
+          -0.4102482795715332,
+          0.003000000026077032,
+          -0.4858396649360657
+        ],
+        "max": [
+          0.28364279866218567,
+          1.8280856609344482,
+          0.21993406116962433
+        ]
+      }
+    }
+  },
+  "resourcePolicy": {
+    "suppliedReferenceExcluded": true,
+    "sameOriginResourcesOnly": true
+  },
+  "scope": "Public viewer controls, real touch drag and exact reset, reference absence, geometry and GLB roundtrip. Actual downloaded release GLB appearance was also inspected separately."
+}

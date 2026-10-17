@@ -1,0 +1,81 @@
+{
+  "visualScore": 95,
+  "visualReviews": 10,
+  "visualScoreType": "Author self-assessment from rendered front, portrait, four-side and device reviews; not a measured likeness percentage or AAA certification.",
+  "renderedReviewStatus": "Accepted. Both exported GLBs were reloaded and visually checked; the scoped public bundle passed 23 browser, touch and export checks.",
+  "reviews": [
+    {
+      "iteration": 1,
+      "score": 65,
+      "findings": "Wide doll-like eyes, raised hair roots, dark nose spot, intersecting cuffs and collar, hidden red shoe panels and gray umbrella."
+    },
+    {
+      "iteration": 2,
+      "score": 72,
+      "findings": "Eye proportions and initial hair shaping improved. Four-side inspection exposed garment intersections and wrist seams."
+    },
+    {
+      "iteration": 3,
+      "score": 80,
+      "findings": "Red shoe panels, collar, finger grip and blue canopy improved. Face profile, cuff seams and foot depth still needed correction."
+    },
+    {
+      "iteration": 4,
+      "score": 85,
+      "findings": "Softer nose shading and mild perspective improved the figure. Chin ledge, hair seams, wrist continuity and far-foot depth remained visible."
+    },
+    {
+      "iteration": 5,
+      "score": 88,
+      "findings": "Continuous wrists, smoother chin and revised far-foot depth are visible in full-body and four-side views. Remaining priorities are head tilt and expression, softer hood folds and the cuff-top seam."
+    },
+    {
+      "iteration": 6,
+      "score": 91,
+      "findings": "Rounded jaw, tilted head, continuous shorts-to-cuff transition, curved hood and compact umbrella mechanism now hold together in all four views. GLB round-trip and device controls pass. Remaining priorities: upper neck junction, ponytail silhouette, cotton gathering and sneaker stack/ankle alignment."
+    },
+    {
+      "iteration": 7,
+      "score": 93,
+      "findings": "Smooth hair shading removes the crown band, fuller asymmetric ponytails approach the reference, the neck junction is clean, and sculpted cotton folds improve the hem silhouette. Four-side surfaces remain coherent. The remaining targeted changes are the near-eye forelock and matched lower sneaker stacks with nearly level sock tops."
+    },
+    {
+      "iteration": 8,
+      "score": 90,
+      "accepted": false,
+      "findings": "The shoe/ankle projection improved, but a new isolated forelock read as a stiff blade and a lowered sock sleeve left its rim detached. Candidate rejected; accepted visual score remains 93 while both defects are corrected."
+    },
+    {
+      "iteration": 9,
+      "score": 94,
+      "accepted": true,
+      "findings": "The connected temple hair now curves naturally into the jaw-framing tip. Short ankle bands join the legs and lowered sneaker stacks continuously. Front, sides and back show clean hoodie, cuffs, hands, feet and asymmetric ponytails. Final likeness refinements are the iris/pupil proportions and a shallower center V neckline."
+    },
+    {
+      "iteration": 10,
+      "score": 95,
+      "accepted": true,
+      "findings": "Taller blue irises with compact oval pupils improve expression. A 25 mm center neckline lift matches the exposed neck area more closely. Final front, portrait and four-side reviews show continuous hair, garments, wrist/ankle joins and natural hidden surfaces. The responsive viewer passes actual phone touch-orbit, precise preset reset, 24 browser/export checks and a lossless triangle/bounds GLB round-trip. Author self-assessment; illustrated fringe/fold details and unseen surfaces remain interpreted."
+    }
+  ],
+  "acceptedVisualIteration": 10,
+  "componentAssessments": {
+    "headAndHair": 94,
+    "bodyAndOutfit": 95,
+    "umbrella": 95
+  },
+  "remainingDifferences": [
+    "The source has finer flat illustrated fringe segmentation and slightly more asymmetric facial linework.",
+    "Some cotton/denim fold placement is interpreted in 3D.",
+    "Only one source view was supplied; unseen sides and back are original plausible construction.",
+    "The character is a static posed model; it has no skeleton or facial animation rig."
+  ],
+  "deliveryVerification": {
+    "publicBundleChecks": 23,
+    "releaseExportChecks": 36,
+    "sourceTriangleCount": 343720,
+    "primaryBytes": 8925984,
+    "showcaseBytes": 8970528,
+    "sourceGeometryUnchangedByExport": true
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "title": "Hina procedural character — numerical fitting summary",
+  "reportScope": "Public summary of authored parameter-fitting outputs. Numerical fit scores and rendered visual-review scores are separate measures.",
+  "iterations": 10000,
+  "targetIterations": 10000,
+  "uniqueCandidateCount": 10000,
+  "iterationType": "Distinct numerical parameter evaluations, separate from rendered visual refinement passes",
+  "fitScore": 89.5665878,
+  "visualScore": null,
+  "visualReviews": 0,
+  "finalParameterEvaluations": 20000,
+  "priorDiagnosticParameterEvaluations": 40000,
+  "currentEnvironmentParameterEvaluations": 20000,
+  "cumulativeParameterEvaluations": 60000,
+  "iterationAccounting": {
+    "finalPublishedRuns": 2,
+    "candidatesPerFinalRun": 10000,
+    "finalPublishedCandidateRows": 20000,
+    "earlierDiagnosticRuns": 4,
+    "earlierDiagnosticCandidates": 40000,
+    "earlierFullCsvFilesIncluded": false,
+    "note": "The total includes 40,000 earlier authoring diagnostics plus 20,000 final fixed-pose evaluations. The published full CSVs contain the final 20,000 evaluations only."
+  },
+  "headPose": {
+    "yawRadians": 0.45,
+    "rollRadians": -0.12,
+    "pivotMetres": [
+      0,
+      1.39,
+      0
+    ],
+    "rotationOrder": "Rz(roll) * Ry(yaw), yaw applied first",
+    "policy": "Fixed to the visually accepted pose for both final numerical runs."
+  },
+  "bestCamera": {
+    "projection": "perspective",
+    "yaw": -0.038137410474,
+    "pitch": 0.072270155699,
+    "centerX": -0.046774626808,
+    "centerY": 0.893496409553,
+    "span": 1.869846624499,
+    "distance": 3.8
+  },
+  "cameraApplication": {
+    "projection": "perspective",
+    "radialDistanceMetres": 3.8,
+    "verticalSpanMetres": 1.869846624499,
+    "fovDegrees": 27.64418539993,
+    "aspect": 0.3913738019169329,
+    "positionMetres": [
+      -0.191283452488,
+      1.167884002309,
+      3.787324734987
+    ],
+    "targetMetres": [
+      -0.046774626808,
+      0.893496409553,
+      0
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ]
+  },
+  "metrics": {
+    "weightedRmsePx": 13.062632073,
+    "normalizedRmse": 0.010433412199,
+    "robustLossPx2": 77.578275619,
+    "maxLandmarkErrorPx": 21.574774762
+  },
+  "scoreDefinition": {
+    "name": "Numerical landmark alignment score",
+    "weightedRmsePx": "sqrt(sum(weight_i * squared_2D_reprojection_error_i) / sum(weight_i))",
+    "normalizedRmse": "weightedRmsePx / 1252",
+    "fitScore": "100 * clamp(1 - normalizedRmse / 0.10, 0, 1)",
+    "interpretation": "95 on this numerical scale corresponds to 6.26 pixels weighted RMSE; it does not establish rendered likeness or production quality.",
+    "selectionObjective": "Minimize fixed-weight radial Huber loss with delta=12 pixels; retain the original weights when reporting RMSE."
+  },
+  "method": {
+    "manualCorrespondenceCount": 17,
+    "annotationApproach": "Approximate correspondences were interpreted visually. Input locations and the supplied reference are excluded from this public metadata.",
+    "search": "Seeded shifted Halton coverage, elite-assisted refinement, reflected coordinate search, and local polish.",
+    "framing": "Constrained camera framing is optimized with weighted least squares and robust updates; perspective framing uses exact projection derivatives.",
+    "evaluationAccounting": "Only unique outer candidate evaluations are counted; internal framing-solver steps are excluded.",
+    "constraints": {
+      "cameraYawRadians": [
+        -0.35,
+        0.65
+      ],
+      "cameraPitchRadians": [
+        0,
+        0.22
+      ],
+      "cameraCenterXMetres": [
+        -0.15,
+        0.1
+      ],
+      "cameraCenterYMetres": [
+        0.78,
+        1.08
+      ],
+      "verticalSpanMetres": [
+        1.68,
+        2.15
+      ]
+    },
+    "limitations": [
+      "Sparse landmark error does not measure complete silhouette, materials, expression, occlusion, or side-view quality.",
+      "Approximate annotations and stylized anatomy can leave persistent residuals; those residuals were retained.",
+      "The accepted head pose remained fixed during the final comparison."
+    ]
+  },
+  "projectionComparison": [
+    {
+      "projection": "orthographic",
+      "candidates": 10000,
+      "fitScore": 89.38825104,
+      "weightedRmsePx": 13.285909698,
+      "robustLossPx2": 73.726426075,
+      "camera": {
+        "projection": "orthographic",
+        "radialDistanceMetres": 5,
+        "verticalSpanMetres": 1.855811053572,
+        "fovDegrees": null,
+        "aspect": 0.3913738019169329,
+        "positionMetres": [
+          -0.082470916151,
+          1.007223577745,
+          4.998574439061
+        ],
+        "targetMetres": [
+          -0.050545674389,
+          0.892182906229,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "projection": "perspective",
+      "candidates": 10000,
+      "fitScore": 89.5665878,
+      "weightedRmsePx": 13.062632073,
+      "robustLossPx2": 77.578275619,
+      "camera": {
+        "projection": "perspective",
+        "radialDistanceMetres": 3.8,
+        "verticalSpanMetres": 1.869846624499,
+        "fovDegrees": 27.64418539993,
+        "aspect": 0.3913738019169329,
+        "positionMetres": [
+          -0.191283452488,
+          1.167884002309,
+          3.787324734987
+        ],
+        "targetMetres": [
+          -0.046774626808,
+          0.893496409553,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      }
+    }
+  ],
+  "publishedCsvFiles": [
+    {
+      "projection": "orthographic",
+      "file": "exports/fit-history/run-001/iteration-log.csv",
+      "scoredRows": 10000,
+      "sha256": "aebf6c126de0a6ee881b1467b7a2469a9b22ee35935f420a0513520f9d067a54"
+    },
+    {
+      "projection": "perspective",
+      "file": "exports/iteration-log.csv",
+      "scoredRows": 10000,
+      "sha256": "88473886ccd60e965221f76573d7932388442f400286d853003c24f0b542f443"
+    }
+  ]
+}

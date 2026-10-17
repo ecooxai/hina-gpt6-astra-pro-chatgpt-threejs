@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "title": "Hina final numerical fit integrity audit",
+  "passed": true,
+  "scope": "The two published final CSVs contain 20,000 numerical parameter evaluations. They are separate from 40,000 earlier diagnostics and from rendered visual-review passes.",
+  "method": "Verify contiguous iteration numbers, unique parameter tuples, fixed accepted head pose, score formulas, nonincreasing incumbent robust loss, and full-file SHA256. Recompute the final weighted RMSE independently from the detailed private audit inputs.",
+  "headPose": {
+    "yawRadians": 0.45,
+    "rollRadians": -0.12,
+    "pivotMetres": [
+      0,
+      1.39,
+      0
+    ],
+    "rotationOrder": "Rz(roll) * Ry(yaw), yaw applied first",
+    "policy": "Fixed to the visually accepted pose for both final numerical runs."
+  },
+  "finalCandidateRows": 20000,
+  "priorDiagnosticCandidates": 40000,
+  "cumulativeParameterEvaluations": 60000,
+  "reports": [
+    {
+      "projection": "orthographic",
+      "dataRows": 10000,
+      "uniqueCandidateRows": 10000,
+      "visualScoresAllBlank": true,
+      "fixedHeadPose": true,
+      "scoreFormulaMaximumError": 8.945733043219661e-10,
+      "summaryRmseRecomputedFromRoundedLandmarks": 13.285910078487301,
+      "csvSha256Verified": true,
+      "authoredModelHashesVerifiedDuringFinalAudit": true,
+      "logSha256": "aebf6c126de0a6ee881b1467b7a2469a9b22ee35935f420a0513520f9d067a54"
+    },
+    {
+      "projection": "perspective",
+      "dataRows": 10000,
+      "uniqueCandidateRows": 10000,
+      "visualScoresAllBlank": true,
+      "fixedHeadPose": true,
+      "scoreFormulaMaximumError": 8.849809773892048e-10,
+      "summaryRmseRecomputedFromRoundedLandmarks": 13.062632586092464,
+      "csvSha256Verified": true,
+      "authoredModelHashesVerifiedDuringFinalAudit": true,
+      "logSha256": "88473886ccd60e965221f76573d7932388442f400286d853003c24f0b542f443"
+    }
+  ],
+  "publishedCsvValidation": [
+    {
+      "projection": "orthographic",
+      "file": "exports/fit-history/run-001/iteration-log.csv",
+      "bytes": 2533365,
+      "sha256": "aebf6c126de0a6ee881b1467b7a2469a9b22ee35935f420a0513520f9d067a54",
+      "scoredRows": 10000,
+      "uniqueCandidateRows": 10000,
+      "containsOnlyFixedLabelsAndNumericalOutput": true,
+      "suppliedUrlsOrFilesystemPathsPresent": false,
+      "visualScoreCellsAllBlank": true
+    },
+    {
+      "projection": "perspective",
+      "file": "exports/iteration-log.csv",
+      "bytes": 2524517,
+      "sha256": "88473886ccd60e965221f76573d7932388442f400286d853003c24f0b542f443",
+      "scoredRows": 10000,
+      "uniqueCandidateRows": 10000,
+      "containsOnlyFixedLabelsAndNumericalOutput": true,
+      "suppliedUrlsOrFilesystemPathsPresent": false,
+      "visualScoreCellsAllBlank": true
+    }
+  ],
+  "publicMetadataScope": "The public reports contain aggregate numerical output, authored camera/pose coordinates, and generic benchmark hardware information. Supplied image URLs, input landmark locations, absolute filesystem paths, raw process/environment records, and internal report links are excluded."
+}

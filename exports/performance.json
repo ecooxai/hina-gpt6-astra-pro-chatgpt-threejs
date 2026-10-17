@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "title": "Hina rendering performance",
+  "metricScope": "Rendering performance measurements; no visual-quality or likeness score is inferred.",
+  "benchmarkHardware": {
+    "gpu": "Intel UHD Graphics 620",
+    "graphicsBackend": "ANGLE with Mesa OpenGL ES through EGL",
+    "browser": "Headless Chromium",
+    "graphicsApi": "WebGL 2",
+    "hardwareAccelerated": true
+  },
+  "method": "One bounded active-turntable run at each canvas size, with 60 requestAnimationFrame-driven scene draws after 10 warmup frames. Wall-clock draw intervals and RAF timestamps were recorded separately. Five explicit drawScene plus 1×1 RGBA readPixels completions followed each cadence run.",
+  "resourceMethod": "Aggregate CPU-time deltas for the isolated browser, divided by elapsed wall time; 100% means one CPU core. Aggregate resident memory can double-count shared pages.",
+  "pageErrorCount": 0,
+  "cases": [
+    {
+      "canvasPixels": [
+        1152,
+        925
+      ],
+      "frames": 60,
+      "warmupFrames": 10,
+      "medianFrameIntervalMs": 16.7,
+      "p95FrameIntervalMs": 16.9,
+      "effectiveActiveFps": 60.0081,
+      "medianRafIntervalMs": 16.7,
+      "medianDrawSubmissionMs": 0.6,
+      "framebufferCompletion": {
+        "samples": 5,
+        "medianMs": 7.4,
+        "meanMs": 7.98,
+        "minimumMs": 7.1,
+        "maximumMs": 10.2
+      },
+      "aggregateBrowserResources": {
+        "cpuPercentOfOneCore": 22.7259,
+        "residentMemoryMiB": 883.68
+      },
+      "validation": {
+        "visibleDocument": true,
+        "glErrorCount": 0,
+        "contextLossCount": 0,
+        "staticShadowMapReused": true
+      },
+      "scene": {
+        "meshes": 49,
+        "triangles": 343720,
+        "vertices": 192546,
+        "drawCalls": 51,
+        "pixelRatio": 1
+      }
+    },
+    {
+      "canvasPixels": [
+        390,
+        633
+      ],
+      "frames": 60,
+      "warmupFrames": 10,
+      "medianFrameIntervalMs": 16.7,
+      "p95FrameIntervalMs": 16.9,
+      "effectiveActiveFps": 60.0081,
+      "medianRafIntervalMs": 16.7,
+      "medianDrawSubmissionMs": 0.6,
+      "framebufferCompletion": {
+        "samples": 5,
+        "medianMs": 6.6,
+        "meanMs": 6.74,
+        "minimumMs": 6.5,
+        "maximumMs": 7.3
+      },
+      "aggregateBrowserResources": {
+        "cpuPercentOfOneCore": 24.8577,
+        "residentMemoryMiB": 882.44
+      },
+      "validation": {
+        "visibleDocument": true,
+        "glErrorCount": 0,
+        "contextLossCount": 0,
+        "staticShadowMapReused": true
+      },
+      "scene": {
+        "meshes": 49,
+        "triangles": 343720,
+        "vertices": 192546,
+        "drawCalls": 51,
+        "pixelRatio": 1
+      }
+    }
+  ],
+  "limits": [
+    "This is a short headless-browser measurement on the stated integrated GPU, not a measurement of physical phone hardware.",
+    "RAF cadence does not guarantee physical display presentation or refresh rate.",
+    "Actual framebuffer completion is reported separately from CPU draw submission.",
+    "Static geometry reuses its shadow map during orbit.",
+    "Concurrent system activity may affect a short run."
+  ],
+  "revisionNote": "The bounded benchmark preceded the final small eye/collar, browser-portability, and preset-control refinements. The measurements were preserved without being rerun or relabeled after those edits.",
+  "softwareDiagnosis": {
+    "backend": "SwiftShader software rendering",
+    "conclusion": "The initial review backend had multi-second completed-frame costs. Small submission timings were misleading for that workload. Native Intel EGL resolved the measured backend bottleneck.",
+    "cases": [
+      {
+        "canvasPixels": [
+          1152,
+          925
+        ],
+        "fullCompletionMedianMs": 2801.1,
+        "halfResolutionCanvasPixels": [
+          576,
+          462
+        ],
+        "halfResolutionCompletionMedianMs": 2193.3,
+        "glError": 0,
+        "contextLost": false
+      },
+      {
+        "canvasPixels": [
+          390,
+          633
+        ],
+        "fullCompletionMedianMs": 2295,
+        "halfResolutionCanvasPixels": [
+          195,
+          316
+        ],
+        "halfResolutionCompletionMedianMs": 2003.1,
+        "glError": 0,
+        "contextLost": false
+      }
+    ],
+    "note": "These earlier software diagnostics are retained as context; software submission cadence is not presented as an achieved rendering frame rate."
+  },
+  "reviewBrowserBehavior": "Prefer a successfully probed native WebGL2 context; report a native failure before selecting a verified software fallback. An explicit software override is available."
+}
